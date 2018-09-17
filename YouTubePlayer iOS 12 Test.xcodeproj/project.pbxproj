@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7190B569F9F415D976006304 /* Pods_YouTubePlayer_iOS_12_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF46AA871F479D345FC4D5C8 /* Pods_YouTubePlayer_iOS_12_Test.framework */; };
 		83B0E8F7214FF0A700B988A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0E8F6214FF0A700B988A6 /* AppDelegate.swift */; };
 		83B0E8F9214FF0A700B988A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0E8F8214FF0A700B988A6 /* ViewController.swift */; };
 		83B0E8FC214FF0A700B988A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B0E8FA214FF0A700B988A6 /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		83B0E8FD214FF0A900B988A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83B0E900214FF0A900B988A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83B0E902214FF0A900B988A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86D78B1D984D780940A31E00 /* Pods-YouTubePlayer iOS 12 Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubePlayer iOS 12 Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouTubePlayer iOS 12 Test/Pods-YouTubePlayer iOS 12 Test.release.xcconfig"; sourceTree = "<group>"; };
+		AF46AA871F479D345FC4D5C8 /* Pods_YouTubePlayer_iOS_12_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTubePlayer_iOS_12_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC84CA3785D6205CCE61AD7A /* Pods-YouTubePlayer iOS 12 Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubePlayer iOS 12 Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouTubePlayer iOS 12 Test/Pods-YouTubePlayer iOS 12 Test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7190B569F9F415D976006304 /* Pods_YouTubePlayer_iOS_12_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B2BFC3A6A0C3F51A579F5A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF46AA871F479D345FC4D5C8 /* Pods_YouTubePlayer_iOS_12_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		83B0E8EA214FF0A700B988A6 = {
 			isa = PBXGroup;
 			children = (
 				83B0E8F5214FF0A700B988A6 /* YouTubePlayer iOS 12 Test */,
 				83B0E8F4214FF0A700B988A6 /* Products */,
+				A078BB7AD5BEF209B7068C82 /* Pods */,
+				0B2BFC3A6A0C3F51A579F5A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = "YouTubePlayer iOS 12 Test";
 			sourceTree = "<group>";
 		};
+		A078BB7AD5BEF209B7068C82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC84CA3785D6205CCE61AD7A /* Pods-YouTubePlayer iOS 12 Test.debug.xcconfig */,
+				86D78B1D984D780940A31E00 /* Pods-YouTubePlayer iOS 12 Test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83B0E905214FF0A900B988A6 /* Build configuration list for PBXNativeTarget "YouTubePlayer iOS 12 Test" */;
 			buildPhases = (
+				BE22397D0538CBF1006FBEA3 /* [CP] Check Pods Manifest.lock */,
 				83B0E8EF214FF0A700B988A6 /* Sources */,
 				83B0E8F0214FF0A700B988A6 /* Frameworks */,
 				83B0E8F1214FF0A700B988A6 /* Resources */,
+				57131EB0E3E90B31E50772BB /* [CP] Embed Pods Frameworks */,
+				9DBC845B0AE20E4056DC0FAB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,72 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57131EB0E3E90B31E50772BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YouTubePlayer iOS 12 Test/Pods-YouTubePlayer iOS 12 Test-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouTubePlayer iOS 12 Test/Pods-YouTubePlayer iOS 12 Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DBC845B0AE20E4056DC0FAB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouTubePlayer iOS 12 Test/Pods-YouTubePlayer iOS 12 Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE22397D0538CBF1006FBEA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YouTubePlayer iOS 12 Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83B0E8EF214FF0A700B988A6 /* Sources */ = {
@@ -280,6 +373,7 @@
 		};
 		83B0E906214FF0A900B988A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC84CA3785D6205CCE61AD7A /* Pods-YouTubePlayer iOS 12 Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +392,7 @@
 		};
 		83B0E907214FF0A900B988A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86D78B1D984D780940A31E00 /* Pods-YouTubePlayer iOS 12 Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
